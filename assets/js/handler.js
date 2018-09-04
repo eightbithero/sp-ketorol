@@ -600,15 +600,6 @@ function handleCompleteMob1(evt,comp) {
         createjs.Ticker.setFPS(lib.properties.fps);
         createjs.Ticker.addEventListener("tick", stage);
     }
-    var helper = new createjs.ButtonHelper(stage, "out", "over", "down", false, stage, "hit");
-    stage.addEventListener("click", handleClick);
-    stage.enableMouseOver();
-    function handleClick(event) {
-    	$("#" + canvas1.id + "_hover").fadeIn();
-        $(".scr1_item_1_btn").fadeIn();
-        dot1Mob = true;
-        gtag('event', ' ketorol', { 'event_category': 'button_click', 'event_action': 'ushib', });
-    }
     //Code to support hidpi screens and responsive scaling.
     function makeResponsive(isResp, respDim, isScale, scaleType) {
         var lastW, lastH, lastS=1;
@@ -662,15 +653,6 @@ function handleCompleteMob2(evt,comp) {
         createjs.Ticker.setFPS(lib.properties.fps);
         createjs.Ticker.addEventListener("tick", stage);
     }
-    var helper = new createjs.ButtonHelper(stage, "out", "over", "down", false, stage, "hit");
-    stage.addEventListener("click", handleClick);
-    stage.enableMouseOver();
-    function handleClick(event) {
-        $("#" + canvas2.id + "_hover").fadeIn();
-        $(".scr1_item_2_btn").fadeIn();
-        dot2Mob = true;
-        gtag('event', ' ketorol', { 'event_category': 'button_click', 'event_action': 'rastyazhenie', });
-    }
     //Code to support hidpi screens and responsive scaling.
     function makeResponsive(isResp, respDim, isScale, scaleType) {
         var lastW, lastH, lastS=1;
@@ -723,16 +705,7 @@ function handleCompleteMob3(evt,comp) {
         stage.addChild(exportRoot);
         createjs.Ticker.setFPS(lib.properties.fps);
         createjs.Ticker.addEventListener("tick", stage);
-    }
-    var helper = new createjs.ButtonHelper(stage, "out", "over", "down", false, stage, "hit");
-    stage.addEventListener("click", handleClick);
-    stage.enableMouseOver();
-    function handleClick(event) {
-        $("#" + canvas3.id + "_hover").fadeIn();
-        $(".scr1_item_3_btn").fadeIn();
-        dot3Mob = true;
-        gtag('event', ' ketorol', { 'event_category': 'button_click', 'event_action': 'vyvih', });
-    }
+    };
     //Code to support hidpi screens and responsive scaling.
     function makeResponsive(isResp, respDim, isScale, scaleType) {
         var lastW, lastH, lastS=1;

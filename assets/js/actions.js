@@ -12,7 +12,27 @@ $(function() {
             setTimeout(function () { scr2BtnInit(); }, 2000);
         }
     });
-    $(".dot_mob").click(function () {
+    $(".dot-click").click(function () {
+        switch ($(this).attr('id')) {
+            case 'click1':
+                $("#canvas_point1_mob_hover").fadeIn();
+                $(".scr1_item_1_btn").fadeIn();
+                dot1Mob = true;
+                gtag('event', ' ketorol', { 'event_category': 'button_click', 'event_action': 'ushib', });
+                break;
+            case 'click2':
+                $("#canvas_point2_mob_hover").fadeIn();
+                $(".scr1_item_2_btn").fadeIn();
+                dot2Mob = true;
+                gtag('event', ' ketorol', { 'event_category': 'button_click', 'event_action': 'rastyazhenie', });
+                break;
+            case 'click3':
+                $("#canvas_point3_mob_hover").fadeIn();
+                $(".scr1_item_3_btn").fadeIn();
+                dot3Mob = true;
+                gtag('event', ' ketorol', { 'event_category': 'button_click', 'event_action': 'vyvih', });
+                break;
+        }
         if (dot1Mob && dot2Mob && dot3Mob) {
             scr2FormulaMobInit();
             $('.red-dot-mob').show();
@@ -51,7 +71,7 @@ $(function() {
                     $(".scr3").fadeOut();
                     $(".scr4").fadeIn();
                     scr5Mob();
-                }, 3000);
+                }, 500);
             });
         }, 6000);
     });
@@ -74,12 +94,13 @@ $(function() {
                        $("#animation_container_scr6").fadeIn();
                        setTimeout(function () {
                            scr6Init();
-                       }, 3000);
+                       }, 500);
                    }, 2000);
                });
            }, 6000);
        });
     });
+
 });
 function showDots() {
     setTimeout(function () {
