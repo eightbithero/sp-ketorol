@@ -775,3 +775,6 @@ html, body {
         bottom: 72px;
     }
 }
+#mobLast {
+    display: none;
+}

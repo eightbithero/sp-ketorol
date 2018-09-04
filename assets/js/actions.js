@@ -70,6 +70,7 @@ $(function() {
                 setTimeout(function () {
                     $(".scr3").fadeOut();
                     $(".scr4").fadeIn();
+                    $("#mobLast").fadeIn();
                     scr5Mob();
                 }, 500);
             });
