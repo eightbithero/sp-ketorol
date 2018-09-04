@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Кеторол</title>
+    </head>
+    <!-- SCRIPTS -->
+    <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+    <script src="assets/js/_Point1.js"></script>
+    <script src="assets/js/Desktop_Scr2_Button.js"></script>
+    <script src="assets/js/Desktop_Scr2_Formula.js"></script>
+    <script src="assets/js/Desktop_Scr3.js"></script>
+    <script src="assets/js/Desktop_Scr4-5.js"></script>
+    <script src="assets/js/Desktop_Scr6.js"></script>
+
+    <script src="assets/js/Mobile_Scr2_Formula.js"></script>
+    <script src="assets/js/Mobile_Scr3.js"></script>
+    <script src="assets/js/Mobile_Scr4-5-6.js"></script>
+    <script src="assets/js/Mobile_Scr7.js"></script>
+    <script src="assets/js/handler.js"></script>
+    <script src="assets/js/iframeResizer.contentWindow.min.js"></script>
+
+    <!-- STYLES -->
+    <link href="assets/styles/main.css" media="all" rel="stylesheet" />
+    <body onload="">
+        <div class="wrapper">
+            <div class="visible-desktop main-block">
+                <div class="header"><img src="assets/images/header.png" width="990"></div>
+                <div class="content-wrapper">
+                    <div class="content">
+                        <div class="scr1">
+
+                            <div id="animation_container_point1" id="dot1" class="dot dot1" style="background-color:rgba(255, 255, 255, 0.00); width:65px; height:65px">
+                                <canvas id="canvas_point1" width="65" height="65" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 0.00);"></canvas>
+                                <div id="dom_overlay_container_point1" style="pointer-events:none; overflow:hidden; width:65px; height:65px; position: absolute; left: 0px; top: 0px; display: block;">
+                                </div>
+                            </div>
+                            <img class="scr1_item scr1_item_1" src="assets/images/scr1_1.png">
+                            <img class="scr1_item scr1_item_1--hover" src="assets/images/scr1_1_hover.png">
+                            <img src="assets/images/injury_btn.png" id="injury" class="btn btn1">
+
+                            <div id="animation_container_point2" id="dot2" class="dot dot2" style="background-color:rgba(255, 255, 255, 0.00); width:65px; height:65px">
+                                <canvas id="canvas_point2" width="65" height="65" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 0.00);"></canvas>
+                                <div id="dom_overlay_container_point2" style="pointer-events:none; overflow:hidden; width:65px; height:65px; position: absolute; left: 0px; top: 0px; display: block;">
+                                </div>
+                            </div>
+                            <img class="scr1_item scr1_item_2" src="assets/images/scr1_2.png">
+                            <img src="assets/images/stretching_btn.png" id="stretching" class="btn btn2">
+                            <img class="scr1_item scr1_item_2--hover" src="assets/images/scr1_2_hover.png">
+
+                            <div id="animation_container_point3" id="dot3" class="dot dot3" style="background-color:rgba(255, 255, 255, 0.00); width:65px; height:65px">
+                                <canvas id="canvas_point3" width="65" height="65" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 0.00);"></canvas>
+                                <div id="dom_overlay_container_point3" style="pointer-events:none; overflow:hidden; width:65px; height:65px; position: absolute; left: 0px; top: 0px; display: block;">
+                                </div>
+                            </div>
+                            <img class="scr1_item scr1_item_3" src="assets/images/scr1_3.png">
+                            <img src="assets/images/sprain_btn.png" id="sprain" class="btn btn3">
+                            <img class="scr1_item scr1_item_3--hover" src="assets/images/scr1_3_hover.png">
+
+                            <img class="scr1_item scr1_item_4" src="assets/images/scr1_4.png">
+                            <img class="scr1_item scr1_item_4--hover" src="assets/images/scr1_4_hover.png">
+
+                            <img src="assets/images/frames.png" class="frames" width="914.5">
+                        </div>
+                        <div class="scr2">
+                            <img class="scr2_item scr2_item_1"  src="assets/images/scr2_1.png">
+                            <img class="scr2_item scr2_item_2" src="assets/images/scr2_2.png">
+                            <img class="scr2_item scr2_item_3" src="assets/images/scr2_3.png">
+                            <img class="scr2_item scr2_item_4" src="assets/images/product.png">
+                            <div class="action_btn" id="action_btn"></div>
+                        </div>
+                        <div class="scr3">
+                            <img class="scr3_item scr3_item_1" src="assets/images/product.png">
+                            <img class="scr3_item scr3_item_2" src="assets/images/scr3_main.png">
+                            <img class="scr3_item scr3_item_3" src="assets/images/scr3_main_hover.png">
+                            <img class="scr3_item scr3_item_4" src="assets/images/arrow.png">
+                            <div class="disclaimer">
+                                1. grls.rosminzdrav.ru, 09.05.2018<br>
+                                2. http://www.rlsnet.ru/mnn_index_id_64.htm<br>
+                                3. Инструкция по медицинскому применению препарата Кеторол гель
+                            </div>
+                        </div>
+                        <div class="scr4">
+                            <img class="scr4_item scr4_item_1" src="assets/images/product.png">
+                            <img class="scr4_item scr4_item_2" src="assets/images/scr4_main.png" width="1810">
+                            <img class="scr3_item scr4_item_3" src="assets/images/scr4_frame.png" width="1860">
+                            <div class="disclaimer">
+                                1. grls.rosminzdrav.ru, 09.05.2018<br>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="animation_container_button" class="animation_container">
+                        <canvas id="canvas_button" width="990" height="620" style="position: relative; display: block; background-color:rgba(0, 0, 0, 0.00);"></canvas>
+                        <div id="dom_overlay_container_button" style="pointer-events:none; overflow:hidden; width:990px; height:620px; position: relative; left: 0px; top: 0px; display: block;">
+                        </div>
+                    </div>
+                    <div id="animation_container_formula" class="animation_container">
+                        <canvas id="canvas_formula" width="990" height="620" style="position: relative; display: block; background-color:rgba(0, 0, 0, 0.00);"></canvas>
+                        <div id="dom_overlay_container_formula" style="pointer-events:none; overflow:hidden; width:990px; height:620px; position: relative; left: 0px; top: 0px; display: block;">
+                        </div>
+                    </div>
+                    <div id="animation_container_scr3" class="animation_container">
+                        <canvas id="canvas_scr3" width="990" height="620" style="position: relative; display: block; background-color:rgba(0, 0, 0, 0.00);"></canvas>
+                        <div id="dom_overlay_container_scr3" style="pointer-events:none; overflow:hidden; width:990px; height:620px; position: relative; left: 0px; top: 0px; display: block;">
+                        </div>
+                    </div>
+                    <div id="animation_container_scr4" class="animation_container">
+                        <canvas id="canvas_scr4" width="990" height="620" style="position: relative; display: block; background-color:rgba(0, 0, 0, 0.00);"></canvas>
+                        <div id="dom_overlay_container_scr4" style="pointer-events:none; overflow:hidden; width:990px; height:620px; position: relative; left: 0px; top: 0px; display: block;">
+                        </div>
+                    </div>
+                    <div id="animation_container_scr6" class="animation_container">
+                        <canvas id="canvas_scr6" width="990" height="620" style="position: relative; display: block; background-color:rgba(0, 0, 0, 0.00);"></canvas>
+                        <div id="dom_overlay_container_scr6" style="pointer-events:none; overflow:hidden; width:990px; height:620px; position: relative; left: 0px; top: 0px; display: block;">
+                        </div>
+                    </div>
+                </div>
+
+                <img class="legal" src="assets/images/legal.png"/>
+            </div>
+            <div class="visible-mobile main-block">
+                <div class="header"><img src="assets/images/header_mob.png" width="375"></div>
+                <div class="scr1">
+                    <img class="scr1_item scr1_item_1" src="assets/images/scr1_main_mob.png" >
+                    <img class="frames" src="assets/images/frame_mob.png" width="346.5">
+                    <div id="animation_container_point1_mob" class="dot_mob dot_mob_1" style="background-color:rgba(255, 255, 255, 0.00); width:65px; height:65px">
+                        <canvas id="canvas_point1_mob" width="65" height="65" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 0.00);"></canvas>
+                        <div id="dom_overlay_container_point1_mob" style="pointer-events:none; overflow:hidden; width:65px; height:65px; position: absolute; left: 0px; top: 0px; display: block;">
+                        </div>
+                    </div>
+                    <img id="canvas_point1_mob_hover" src="assets/images/scr2_1_mob.png" class="hover_mob">
+                    <img src="assets/images/sprain_btn_mob.png" class="scr1_item_btn scr1_item_1_btn" width="220">
+
+                    <div id="animation_container_point2_mob" class="dot_mob dot_mob_2" style="background-color:rgba(255, 255, 255, 0.00); width:65px; height:65px">
+                        <canvas id="canvas_point2_mob" width="65" height="65" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 0.00);"></canvas>
+                        <div id="dom_overlay_container_point2_mob" style="pointer-events:none; overflow:hidden; width:65px; height:65px; position: absolute; left: 0px; top: 0px; display: block;">
+                        </div>
+                    </div>
+                    <img id="canvas_point2_mob_hover" src="assets/images/scr2_2_mob.png" class="hover_mob">
+                    <img src="assets/images/stretching_btn_mob.png" class="scr1_item_btn scr1_item_2_btn" width="374">
+
+                    <div id="animation_container_point3_mob" class="dot_mob dot_mob_3" style="background-color:rgba(255, 255, 255, 0.00); width:65px; height:65px">
+                        <canvas id="canvas_point3_mob" width="65" height="65" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 0.00);"></canvas>
+                        <div id="dom_overlay_container_point3_mob" style="pointer-events:none; overflow:hidden; width:65px; height:65px; position: absolute; left: 0px; top: 0px; display: block;">
+                        </div>
+                    </div>
+                    <img id="canvas_point3_mob_hover" src="assets/images/scr2_3_mob.png" class="hover_mob">
+                    <img src="assets/images/injury_btn_mob.png" class="scr1_item_btn scr1_item_3_btn" width="246">
+
+                    <div id="animation_container" class="formula_mob" style="background-color:rgba(0, 0, 0, 0.00); width:750px; height:1144px">
+                        <canvas id="canvas" width="750" height="1144" style="position: absolute; display: block; background-color:rgba(0, 0, 0, 0.00);"></canvas>
+                        <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:750px; height:1144px; position: absolute; left: 0px; top: 0px; display: block;">
+                        </div>
+                    </div>
+                </div>
+                <div class="scr2">
+                    <div id="animation_container_scr3_mob" style="background-color:rgba(0, 0, 0, 0.00); width:750px; height:1144px">
+                        <canvas id="canvas_scr3_mob" width="750" height="1144" style="position: absolute; display: block; background-color:rgba(0, 0, 0, 0.00);"></canvas>
+                        <div id="dom_overlay_container_scr3_mob" style="pointer-events:none; overflow:hidden; width:750px; height:1144px; position: absolute; left: 0px; top: 0px; display: block;">
+                        </div>
+                    </div>
+                    <img class="scr2_item_1_mob" src="assets/images/scr3_1_mob.png" width="288">
+                    <img class="scr2_item_2_mob" src="assets/images/scr3_2_mob.png" width="194">
+                    <img class="scr2_item_3_mob" src="assets/images/scr3_3_mob.png" width="182">
+                    <div class="btn_red_mob"></div>
+                    <img class="product_mob" src="assets/images/product_mob.png" width="498">
+                </div>
+                <div class="scr3">
+                    <img src="assets/images/scr4_main_mob.png" id="scr4Main">
+                    <img src="assets/images/scr5_main_hover_mob.png" width="685" id="scr4MainHover">
+                    <div id="animation_container_scr4_mob" style="background-color:rgba(0, 0, 0, 0.00); width:750px; height:1144px">
+                        <canvas id="canvas_scr4_mob" width="750" height="1144" style="position: absolute; display: block; background-color:rgba(0, 0, 0, 0.00);"></canvas>
+                        <div id="dom_overlay_container_scr4_mob" style="pointer-events:none; overflow:hidden; width:750px; height:1144px; position: absolute; left: 0px; top: 0px; display: block;">
+                        </div>
+                    </div>
+                    <img class="product_mob" src="assets/images/product_mob.png" width="498">
+                    <img class="arrow_mob" src="assets/images/arrow_mob.png" width="21">
+                    <div class="disclaimer">
+                        1. http://www.rlsnet.ru/mnn_index_id_64.htm
+                    </div>
+                </div>
+                <div class="scr4">
+                    <img class="product_mob" src="assets/images/product_mob.png" width="498">
+                    <img src="assets/images/scr5_main_hover_mob.png" width="685" class="scr4_main_mob">
+                    <div id="animation_container_scr5_mob" style="background-color:rgba(0, 0, 0, 0.00); width:750px; height:1144px">
+                        <canvas id="canvas_scr5_mob" width="750" height="1144" style="position: absolute; display: block; background-color:rgba(0, 0, 0, 0.00);"></canvas>
+                        <div id="dom_overlay_container_scr5_mob" style="pointer-events:none; overflow:hidden; width:750px; height:1144px; position: absolute; left: 0px; top: 0px; display: block;">
+                        </div>
+                    </div>
+                    <div class="disclaimer">
+                        1. grls.rosminzdrav.ru, 09.05.2018
+                    </div>
+                </div>
+                <img class="legal" src="assets/images/legal_mob.png" />
+            </div>
+        </div>
+    </body>
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/actions.js"></script>
+</html>
