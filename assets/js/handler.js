@@ -49,6 +49,7 @@ function handleCompleteP1(evt,comp) {
         $(".scr1_item_1--hover").fadeIn();
         $(".scr1 .btn1").fadeIn();
         dot1 = true;
+        gtag('event', ' ketorol', { 'event_category': 'button_click', 'event_action': 'ushib', });
     }
     //Code to support hidpi screens and responsive scaling.
     function makeResponsive(isResp, respDim, isScale, scaleType) {
@@ -110,6 +111,7 @@ function handleCompleteP2(evt,comp) {
         $(".scr1_item_2--hover").fadeIn();
         $(".scr1 .btn2").fadeIn();
         dot2 = true;
+        gtag('event', ' ketorol', { 'event_category': 'button_click', 'event_action': 'rastyazhenie', });
     }
     //Code to support hidpi screens and responsive scaling.
     function makeResponsive(isResp, respDim, isScale, scaleType) {
@@ -171,6 +173,7 @@ function handleCompleteP3(evt,comp) {
         $(".scr1_item_3--hover").fadeIn();
         $(".scr1 .btn3").fadeIn();
         dot3 = true
+        gtag('event', ' ketorol', { 'event_category': 'button_click', 'event_action': 'vyvih', });
     }
     //Code to support hidpi screens and responsive scaling.
     function makeResponsive(isResp, respDim, isScale, scaleType) {
@@ -214,7 +217,7 @@ function handleCompleteP3(evt,comp) {
     fnStartAnimation();
 }
 function scr2BtnInit() {
-	canvas = document.getElementById("canvas_button");
+    canvas = document.getElementById("canvas_button");
 	anim_container = document.getElementById("animation_container_button");
 	dom_overlay_container = document.getElementById("dom_overlay_container_button");
 	var comp=AdobeAn.getComposition("scr2Button");
@@ -238,6 +241,7 @@ function scr2BtnHandleComplete(evt,comp) {
     stage.enableMouseOver();
     // TRANSITION TO SCREEN 2
     function handleClick(event) {
+        gtag('event', ' ketorol', { 'event_category': 'button_click', 'event_action': 'instrukciya', });
 		$(".content").addClass("content-scr2");
 		$(".main-block").addClass("main-block-scr2");
         $(".scr1").fadeOut();
@@ -603,6 +607,7 @@ function handleCompleteMob1(evt,comp) {
     	$("#" + canvas1.id + "_hover").fadeIn();
         $(".scr1_item_1_btn").fadeIn();
         dot1Mob = true;
+        gtag('event', ' ketorol', { 'event_category': 'button_click', 'event_action': 'ushib', });
     }
     //Code to support hidpi screens and responsive scaling.
     function makeResponsive(isResp, respDim, isScale, scaleType) {
@@ -664,6 +669,7 @@ function handleCompleteMob2(evt,comp) {
         $("#" + canvas2.id + "_hover").fadeIn();
         $(".scr1_item_2_btn").fadeIn();
         dot2Mob = true;
+        gtag('event', ' ketorol', { 'event_category': 'button_click', 'event_action': 'rastyazhenie', });
     }
     //Code to support hidpi screens and responsive scaling.
     function makeResponsive(isResp, respDim, isScale, scaleType) {
@@ -725,6 +731,7 @@ function handleCompleteMob3(evt,comp) {
         $("#" + canvas3.id + "_hover").fadeIn();
         $(".scr1_item_3_btn").fadeIn();
         dot3Mob = true;
+        gtag('event', ' ketorol', { 'event_category': 'button_click', 'event_action': 'vyvih', });
     }
     //Code to support hidpi screens and responsive scaling.
     function makeResponsive(isResp, respDim, isScale, scaleType) {

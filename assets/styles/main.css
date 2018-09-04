@@ -30,6 +30,14 @@ html, body {
         width: 660px;
     }
 }
+@media (min-width: 769px) and (max-width: 989px) {
+    html, body {
+        transform: scale(0.99) translate(-0.1%, -0.5%);
+    }
+    .header img {
+        width: 768px;
+    }
+}
 
 /** ANIMATION */
 .animation_container {
@@ -42,6 +50,15 @@ html, body {
 @media (min-width: 601px) and (max-width: 768px) {
     .animation_container {
         transform: scale(0.6) translate(-34.1%, -33.5%);
+        z-index: 3;
+    }
+    #animation_container_button {
+        z-index: 4;
+    }
+}
+@media (min-width: 769px) and (max-width: 989px) {
+    .animation_container {
+        transform: scale(0.75) translate(-14.8%, -18.5%);
         z-index: 3;
     }
     #animation_container_button {
@@ -106,7 +123,13 @@ html, body {
 @media (min-width: 601px) and (max-width: 768px) {
     .content {
         transform: scale(0.75) translate(-21.5%,-23%);
-        z-index: 3;
+        z-index: 4;
+    }
+}
+@media (min-width: 769px) and (max-width: 989px) {
+    .content {
+        transform: scale(0.75) translate(-16%,-23%);
+        z-index: 4;
     }
 }
 
@@ -125,6 +148,13 @@ html, body {
         transform: scale(0.9);
         width: 600px;
         left: -9px;
+    }
+}
+@media (min-width: 769px) and (max-width: 989px) {
+    .legal {
+        transform: scale(0.9);
+        width: 768px;
+        left: 0;
     }
 }
 @media (max-width: 600px) {
@@ -156,6 +186,7 @@ html, body {
         height: 523px;
     }
 }
+
 @media (min-width: 601px) and (max-width: 768px) {
     .scr1, .scr2, .scr3, .scr4 {
         transform: scale(0.8) translate(-10%, -12%);
@@ -164,8 +195,15 @@ html, body {
         width: 912px;
         height: 467px;
     }
+    .scr2 {
+        height: 550px;
+    }
     .scr3 {
         position: relative;
+        height: 542px;
+    }
+    .scr4 {
+        height: 542px;
     }
 }
 @media (max-width: 374px) {
@@ -265,7 +303,31 @@ html, body {
         z-index: 3;
     }
 }
-
+.red-dot {
+    display: none;
+    position: absolute;
+    width: 33px;
+    height: 33px;
+}
+.red-dot-mob {
+    display: none;
+    position: absolute;
+    width: 33px;
+    height: 33px;
+    z-index: 4;
+}
+.dot_mob_1 {
+    top: 113px;
+    left: 72px;
+}
+.dot_mob_2 {
+    top: 247px;
+    left: 71%;
+}
+.dot_mob_3 {
+    left: 40.5%;
+    bottom: 8.5%;
+}
 .dot {
     position: absolute;
     width: 33px;
@@ -478,6 +540,18 @@ html, body {
     .main-block {
         width: 600px;
         height: 465.5px;
+    }
+    .main-block-scr2 {
+        height: 500px;
+    }
+}
+@media (min-width: 769px) and (max-width: 989px) {
+    .main-block {
+        width: 768px;
+        height: 554.5px;
+    }
+    .main-block-scr2 {
+        height: 610px;
     }
 }
 @media (max-width: 600px) {

@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Кеторол</title>
     </head>
+    <!-- SP_KETOROL -->
     <!-- SCRIPTS -->
     <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
     <script src="assets/js/_Point1.js"></script>
@@ -30,7 +31,6 @@
                 <div class="content-wrapper">
                     <div class="content">
                         <div class="scr1">
-
                             <div id="animation_container_point1" id="dot1" class="dot dot1" style="background-color:rgba(255, 255, 255, 0.00); width:65px; height:65px">
                                 <canvas id="canvas_point1" width="65" height="65" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 0.00);"></canvas>
                                 <div id="dom_overlay_container_point1" style="pointer-events:none; overflow:hidden; width:65px; height:65px; position: absolute; left: 0px; top: 0px; display: block;">
@@ -39,6 +39,7 @@
                             <img class="scr1_item scr1_item_1" src="assets/images/scr1_1.png">
                             <img class="scr1_item scr1_item_1--hover" src="assets/images/scr1_1_hover.png">
                             <img src="assets/images/injury_btn.png" id="injury" class="btn btn1">
+                            <img src="assets/images/redDot.png" class="red-dot dot1">
 
                             <div id="animation_container_point2" id="dot2" class="dot dot2" style="background-color:rgba(255, 255, 255, 0.00); width:65px; height:65px">
                                 <canvas id="canvas_point2" width="65" height="65" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 0.00);"></canvas>
@@ -48,6 +49,7 @@
                             <img class="scr1_item scr1_item_2" src="assets/images/scr1_2.png">
                             <img src="assets/images/stretching_btn.png" id="stretching" class="btn btn2">
                             <img class="scr1_item scr1_item_2--hover" src="assets/images/scr1_2_hover.png">
+                            <img src="assets/images/redDot.png" class="red-dot dot2">
 
                             <div id="animation_container_point3" id="dot3" class="dot dot3" style="background-color:rgba(255, 255, 255, 0.00); width:65px; height:65px">
                                 <canvas id="canvas_point3" width="65" height="65" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 0.00);"></canvas>
@@ -57,6 +59,7 @@
                             <img class="scr1_item scr1_item_3" src="assets/images/scr1_3.png">
                             <img src="assets/images/sprain_btn.png" id="sprain" class="btn btn3">
                             <img class="scr1_item scr1_item_3--hover" src="assets/images/scr1_3_hover.png">
+                            <img src="assets/images/redDot.png" class="red-dot dot3">
 
                             <img class="scr1_item scr1_item_4" src="assets/images/scr1_4.png">
                             <img class="scr1_item scr1_item_4--hover" src="assets/images/scr1_4_hover.png">
@@ -131,6 +134,7 @@
                     </div>
                     <img id="canvas_point1_mob_hover" src="assets/images/scr2_1_mob.png" class="hover_mob">
                     <img src="assets/images/sprain_btn_mob.png" class="scr1_item_btn scr1_item_1_btn" width="220">
+                    <img src="assets/images/redDot.png" class="red-dot-mob dot_mob_1">
 
                     <div id="animation_container_point2_mob" class="dot_mob dot_mob_2" style="background-color:rgba(255, 255, 255, 0.00); width:65px; height:65px">
                         <canvas id="canvas_point2_mob" width="65" height="65" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 0.00);"></canvas>
@@ -139,6 +143,7 @@
                     </div>
                     <img id="canvas_point2_mob_hover" src="assets/images/scr2_2_mob.png" class="hover_mob">
                     <img src="assets/images/stretching_btn_mob.png" class="scr1_item_btn scr1_item_2_btn" width="374">
+                    <img src="assets/images/redDot.png" class="red-dot-mob dot_mob_2">
 
                     <div id="animation_container_point3_mob" class="dot_mob dot_mob_3" style="background-color:rgba(255, 255, 255, 0.00); width:65px; height:65px">
                         <canvas id="canvas_point3_mob" width="65" height="65" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 0.00);"></canvas>
@@ -147,6 +152,7 @@
                     </div>
                     <img id="canvas_point3_mob_hover" src="assets/images/scr2_3_mob.png" class="hover_mob">
                     <img src="assets/images/injury_btn_mob.png" class="scr1_item_btn scr1_item_3_btn" width="246">
+                    <img src="assets/images/redDot.png" class="red-dot-mob dot_mob_3">
 
                     <div id="animation_container" class="formula_mob" style="background-color:rgba(0, 0, 0, 0.00); width:750px; height:1144px">
                         <canvas id="canvas" width="750" height="1144" style="position: absolute; display: block; background-color:rgba(0, 0, 0, 0.00);"></canvas>
@@ -196,6 +202,15 @@
             </div>
         </div>
     </body>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-6123503-60"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-6123503-60');
+    </script>
     <script src="assets/js/jquery-3.3.1.min.js"></script>
     <script src="assets/js/actions.js"></script>
 </html>

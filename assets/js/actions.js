@@ -5,13 +5,17 @@ $(function() {
     $(".dot").click(function () {
         if (dot1 && dot2 && dot3) {
             $(".scr1_item_4--hover").delay("100").fadeIn();
+            $("#animation_container_button").css('z-index',6);
+            $("#animation_container_formula").css('z-index',5);
             scr2FormulaInit();
+            $('.red-dot').show();
             setTimeout(function () { scr2BtnInit(); }, 2000);
         }
     });
     $(".dot_mob").click(function () {
         if (dot1Mob && dot2Mob && dot3Mob) {
             scr2FormulaMobInit();
+            $('.red-dot-mob').show();
             setTimeout(function () {
                 $(".scr1").fadeOut();
                 $(".scr2").fadeIn();
@@ -36,6 +40,7 @@ $(function() {
     });
 
     $(".btn_red_mob").click(function () {
+        gtag('event', ' ketorol', { 'event_category': 'button_click', 'event_action': 'formula', });
         $(".scr2").fadeOut();
         $(".scr3").fadeIn();
         scr4Mob();
@@ -52,6 +57,7 @@ $(function() {
     });
 
     $("#action_btn").click(function () {
+        gtag('event', ' ketorol', { 'event_category': 'button_click', 'event_action': 'formula', });
        $(".scr2").hide();
        $("#animation_container_scr3").fadeOut(400, function () {
            setTimeout(function () {
