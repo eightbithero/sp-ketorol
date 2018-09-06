@@ -1,4 +1,8 @@
 $(function() {
+    $(".mockup").click(function() {
+       $(this).hide();
+       $(".main-block.visible-desktop").show();
+    });
     showDots();
     showDotsMob();
     var used = 0;

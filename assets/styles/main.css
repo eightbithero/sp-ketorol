@@ -89,8 +89,21 @@ html, body {
 }
 
 /** CONTENT BLOCKS */
+.mockup {
+    width: 990px;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.mockup img {
+    width: 100%;
+    cursor: pointer;
+}
+
 .main-block {
-    border: 1px solid #DDDDDD;
+    border: none;
     width: 989.5px;
     height: 725.5px;
     margin: 0 auto;
@@ -98,6 +111,9 @@ html, body {
     background-size: contain;
     position: relative;
     overflow: hidden;
+}
+.main-block.visible-desktop {
+    display: none;
 }
 
 .main-block-scr2 {
