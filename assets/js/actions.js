@@ -106,6 +106,20 @@ $(function() {
        });
     });
 
+    $(function() {
+        var blinks = document.querySelectorAll('.sp-link');
+
+        [].forEach.call(blinks, function(link) {
+            link.addEventListener('click', sendMessage);
+        });
+
+        function sendMessage(event) {
+            event.preventDefault();
+            var linkHref = 'outer__' + event.target.getAttribute('href');
+            window.parent.postMessage(linkHref, '*');
+        }
+    });
+
 });
 function showDots() {
     setTimeout(function () {

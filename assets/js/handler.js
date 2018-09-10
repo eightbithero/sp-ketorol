@@ -172,7 +172,7 @@ function handleCompleteP3(evt,comp) {
     function handleClick(event) {
         $(".scr1_item_3--hover").fadeIn();
         $(".scr1 .btn3").fadeIn();
-        dot3 = true
+        dot3 = true;
         gtag('event', ' ketorol', { 'event_category': 'button_click', 'event_action': 'vyvih', });
     }
     //Code to support hidpi screens and responsive scaling.
@@ -258,11 +258,11 @@ function scr2BtnHandleComplete(evt,comp) {
                     $(".scr2_item_2").fadeIn(1000, function () {
                         setTimeout(function () {
                             $(".scr2_item_3").fadeIn(1000, function () {});
-                        }, 1000);
+                        }, 500);
                     });
-                }, 1000)
+                }, 500)
             });
-        }, 1000);
+        }, 500);
     }
 	//Code to support hidpi screens and responsive scaling.
 	function makeResponsive(isResp, respDim, isScale, scaleType) {		

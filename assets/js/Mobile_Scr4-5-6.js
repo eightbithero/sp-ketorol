@@ -1404,7 +1404,7 @@ lib.properties = {
 	id: 'scr4Mob',
 	width: 750,
 	height: 1144,
-	fps: 24,
+	fps: 32,
 	color: "#000000",
 	opacity: 0.00,
 	manifest: [],

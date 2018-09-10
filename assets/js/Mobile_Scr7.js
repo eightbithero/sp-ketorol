@@ -530,11 +530,11 @@ lib.properties = {
 	id: 'scr5',
 	width: 750,
 	height: 1144,
-	fps: 24,
+	fps: 32,
 	color: "#000000",
 	opacity: 0.00,
 	manifest: [
-		{src:"assets/js/images/Mobile_Scr7_atlas_.png", id:"Mobile_Scr7_atlas_"}
+        {src:"assets/js/images/Mobile_Scr7_atlas_.png", id:"Mobile_Scr7_atlas_"}
 	],
 	preloads: []
 };

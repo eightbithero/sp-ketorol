@@ -732,7 +732,7 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 	this.shape_2.setTransform(0.3,-0.5);
 
 	this.shape_3 = new cjs.Shape();
-	this.shape_3.graphics.f().s("#000000").ss(6,0,0,21).p("Ap3S4Is9AAALyGGIKuqtAB3y3IMWAA");
+	this.shape_3.graphics.f().s("#000000").ss(6,0,0,21).p("ALyGGIKuqtAp3S4Is9AAAB3y3IMWAA");
 	this.shape_3.setTransform(-65.7,75.8);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
@@ -1189,7 +1189,7 @@ lib.properties = {
 	id: 'scr3_mob',
 	width: 750,
 	height: 1144,
-	fps: 24,
+	fps: 32,
 	color: "#000000",
 	opacity: 0.00,
 	manifest: [],

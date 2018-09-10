@@ -1292,7 +1292,7 @@ lib.properties = {
 	id: 'scr3',
 	width: 1980,
 	height: 1240,
-	fps: 24,
+	fps: 32,
 	color: "#000000",
 	opacity: 0.00,
 	manifest: [],

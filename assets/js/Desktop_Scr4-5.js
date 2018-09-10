@@ -1708,7 +1708,7 @@ lib.properties = {
 	id: 'scr4',
 	width: 1980,
 	height: 1240,
-	fps: 24,
+	fps: 32,
 	color: "#000000",
 	opacity: 0.00,
 	manifest: [],

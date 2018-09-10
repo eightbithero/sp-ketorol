@@ -529,7 +529,7 @@ html, body {
     width: 554px;
     right: -116px;
     bottom: -20px;
-    z-index: 2;
+    z-index: 100;
 }
 
 .scr4_item_2 {
