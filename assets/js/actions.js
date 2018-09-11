@@ -3,6 +3,10 @@ $(function() {
        $(this).hide();
        $(".main-block.visible-desktop").show();
     });
+    $(".mockup-mob").click(function() {
+        $(this).hide();
+        $(".main-block.visible-mobile").show();
+    });
     showDots();
     showDotsMob();
     var used = 0;

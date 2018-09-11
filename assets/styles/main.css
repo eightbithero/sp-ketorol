@@ -89,6 +89,16 @@ html, body {
 }
 
 /** CONTENT BLOCKS */
+.mockup-mob {
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.mockup-mob img {
+    width: 100%;
+    cursor: pointer;
+}
 .mockup {
     width: 990px;
     height: 400px;
@@ -113,6 +123,9 @@ html, body {
     overflow: hidden;
 }
 .main-block.visible-desktop {
+    display: none;
+}
+.main-block.visible-mobile {
     display: none;
 }
 
